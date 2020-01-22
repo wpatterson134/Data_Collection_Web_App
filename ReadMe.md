@@ -29,6 +29,8 @@ python manage.py createsuper user
 
 Run django server
 ```
+python manage.py makemigration
+python manage.py migrate
 python manage.py runserver
 ```
 
