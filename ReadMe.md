@@ -11,7 +11,7 @@ These instructions will get you a copy of the project up and running on your loc
 Clone the repo
 
 ```
-git clone 
+git clone https://github.com/faizankarim/Data_Collection_Web_App.git
 ```
 
 install python requirements
