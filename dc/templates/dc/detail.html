@@ -1,0 +1,49 @@
+{% extends 'dc/base.html' %}
+{% block title %}{{ album }}{% endblock %}
+{% block albums_active %}active{% endblock %}
+
+{% block body %}
+    <div class="container-fluid songs-container">
+
+        <div class="row">
+
+            <div class="col-sm-4 col-lg-2">
+                <div class="thumbnail">
+                    {#                        <a href="{% url 'detail' media.pk %}">#}
+                    <iframe src="{{ media.video.url }}" class="img-responsive"></iframe>
+                    {#                        </a>#}
+                    <div class="caption">
+                        <h2>{{ media.user }}</h2>
+                        <h4>{{ media.model }}</h4>
+                        <h4>{{ media.year }}</h4>
+
+                        <!-- View Details -->
+                        <a href="{% url 'updateCreate' media.pk %}" class="btn btn-primary btn-sm"
+                           role="button">Update</a>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+{{ media.model }}
+<br>
+<a href="{% url 'updateCreate' media.pk %}">update</a>
+
+<br>
+<a href="{% url 'index' %}">Home</a>

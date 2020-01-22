@@ -1,0 +1,4 @@
+.idea
+venv/
+dc/migrations
+media
