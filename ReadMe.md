@@ -23,16 +23,18 @@ pip install -r requirements
 
 ## Deployment
 
-Run django server
+Pre commands django server
 ```
 python manage.py makemigration
 python manage.py migrate
-python manage.py runserver
 ```
-
 Create Super User
 ```
 python manage.py createsuper user
+```
+Run django server
+```
+python manage.py runserver
 ```
 
 Client Side:
